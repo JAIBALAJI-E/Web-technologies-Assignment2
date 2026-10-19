@@ -24,3 +24,16 @@ This component implements a client-side student admission registration form adhe
 1. Navigate to `QUESTION_1_HTML_CSS_JS/`.
 2. Open `index.html` directly in any web browser (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari).
 3. Test validation by submitting an empty form, invalid fields, and a completely valid form.
+
+Use `sample-upload.png` as a small PNG fixture when testing the required file-upload field.
+
+## Screenshots
+
+### Registration form
+![Question 1 registration form](../SCREENSHOTS/QUESTION_1/Q1_registration_form.png)
+
+### Successful validation
+![Question 1 successful validation](../SCREENSHOTS/QUESTION_1/Q1_success.png)
+
+### Validation errors
+![Question 1 validation errors](../SCREENSHOTS/QUESTION_1/Q1_validation_error.png)
