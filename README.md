@@ -22,6 +22,7 @@ WebTechnology_Assignment_II/
 │   │   └── style.css          # Registration portal styling
 │   ├── js/
 │   │   └── validation.js      # Client-side form validation
+│   ├── sample-upload.png      # PNG fixture for upload validation
 │   ├── index.html             # Student admission form
 │   └── README.md              # Question 1 instructions
 │
@@ -93,8 +94,38 @@ WebTechnology_Assignment_II/
 
 | Module | Technology Stack |
 | :--- | :--- |
+| **Question 1** | HTML5 + CSS3 + Vanilla JavaScript (ES6) |
 | **Question 2** | PHP 8 + MySQL (`mysqli`) + HTML5 + CSS3 + XAMPP |
 | **Question 3** | Java JDK 17 + Java Servlets 3.1 + JSP 2.3 + JDBC + MySQL + Apache Tomcat 9.0.122 |
+
+---
+
+## Question 1: Student Admission Registration Form
+
+Question 1 is a responsive, client-side student admission form built with **HTML5, CSS3, and Vanilla JavaScript (ES6)**. It runs directly in a browser and does not require a server, database, framework, or third-party library.
+
+### Features
+
+- Collects the student's name, roll number, email, academic course, password, and a document or profile image.
+- Validates fields as the user types and again when the form is submitted.
+- Checks that the name contains at least three letters, the roll number is 6–15 alphanumeric characters, the email is valid, and a course is selected.
+- Requires a password of at least eight characters with uppercase and lowercase letters, a number, and a supported special character (`@$!%*?&`).
+- Accepts PDF, JPG, JPEG, and PNG uploads up to 2 MB. The form demonstrates client-side validation only; it does not send or store submissions.
+- Includes [`sample-upload.png`](QUESTION_1_HTML_CSS_JS/sample-upload.png), a small PNG fixture for testing the upload field.
+
+### Run and test
+
+1. Open [`QUESTION_1_HTML_CSS_JS/index.html`](QUESTION_1_HTML_CSS_JS/index.html) in a modern web browser.
+2. Submit the empty form to see required-field errors, then try invalid values to test individual validation rules.
+3. Enter valid values and select `sample-upload.png` to see the success message.
+
+### Screenshots
+
+- [Registration form](SCREENSHOTS/QUESTION_1/Q1_registration_form.png)
+- [Successful validation](SCREENSHOTS/QUESTION_1/Q1_success.png)
+- [Validation errors](SCREENSHOTS/QUESTION_1/Q1_validation_error.png)
+
+See the [Question 1 README](QUESTION_1_HTML_CSS_JS/README.md) for component-level details.
 
 ---
 
