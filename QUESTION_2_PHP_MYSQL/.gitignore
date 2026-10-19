@@ -1,0 +1,9 @@
+# PHP & XAMPP Generated & Temporary Files
+*.log
+.env
+.env.*
+*.tmp
+*.bak
+
+# Preserve uploads directory structure but ignore dynamically uploaded runtime files if any
+# (Note: Sample baseline assets for demonstration are preserved)

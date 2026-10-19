@@ -1,0 +1,20 @@
+# Java Bytecode & Compiled Class Artifacts
+*.class
+src/main/webapp/WEB-INF/classes/*.class
+src/main/webapp/WEB-INF/classes/com/
+bin/
+target/
+
+# IDE & Eclipse / IntelliJ Metadata
+.settings/
+.classpath
+.project
+.idea/
+*.iml
+
+# Server & Runtime Logs
+*.log
+.env
+.env.*
+*.tmp
+*.bak

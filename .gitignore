@@ -1,0 +1,32 @@
+# OS and IDE metadata
+.vscode/
+.idea/
+.settings/
+*.iml
+.classpath
+.project
+.DS_Store
+Thumbs.db
+
+# Local configuration and runtime output
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.bak
+
+# Java build and deployment output
+*.class
+*.war
+bin/
+target/
+**/WEB-INF/classes/*
+!**/WEB-INF/classes/.gitkeep
+
+# Uploaded files are runtime data; retain the directory placeholders.
+/QUESTION_2_PHP_MYSQL/uploads/*
+!/QUESTION_2_PHP_MYSQL/uploads/.gitkeep
+/QUESTION_3_SERVLET_JSP/uploads/*
+!/QUESTION_3_SERVLET_JSP/uploads/.gitkeep
+/SCREENSHOTS/QUESTION_1/dummy_id.png

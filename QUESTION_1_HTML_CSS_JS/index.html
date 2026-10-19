@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPRIET - Student Admission Portal Registration</title>
+    <!-- Linking external CSS stylesheet for academic UI styling -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <h1>KPR Institute of Engineering and Technology</h1>
+            <p>Department of Computer Science and Engineering | Web Technology (U21CS501)</p>
+            <h2>Student Admission Portal - Registration Form</h2>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <div class="card">
+            <div class="card-header">
+                <h3>New Student Registration</h3>
+                <p>Please fill out all required details accurately for admission processing.</p>
+            </div>
+
+            <!-- Global Success Message Container (Initially Hidden) -->
+            <div id="successMessage" class="alert alert-success" style="display: none;">
+                <strong>Success!</strong> Registration details validated successfully. Form is ready for submission.
+            </div>
+
+            <!-- Student Registration Form -->
+            <form id="registrationForm" class="form" novalidate>
+                
+                <!-- 1. Student Name Field -->
+                <div class="form-group">
+                    <label for="studentName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="studentName" name="studentName" placeholder="e.g. Alex Morgan" autocomplete="off">
+                    <small class="error-text" id="nameError"></small>
+                </div>
+
+                <!-- 2. Roll Number Field -->
+                <div class="form-group">
+                    <label for="rollNumber">Roll Number / Register Number <span class="required">*</span></label>
+                    <input type="text" id="rollNumber" name="rollNumber" placeholder="e.g. STU000001" autocomplete="off">
+                    <small class="error-text" id="rollError"></small>
+                </div>
+
+                <!-- 3. Email Address Field -->
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="e.g. student001@example.com" autocomplete="off">
+                    <small class="error-text" id="emailError"></small>
+                </div>
+
+                <!-- 4. Course Selection Dropdown -->
+                <div class="form-group">
+                    <label for="course">Select Academic Course <span class="required">*</span></label>
+                    <select id="course" name="course">
+                        <option value="">-- Select Course --</option>
+                        <option value="CSE">B.E. Computer Science and Engineering</option>
+                        <option value="ECE">B.E. Electronics and Communication Engineering</option>
+                        <option value="EEE">B.E. Electrical and Electronics Engineering</option>
+                        <option value="MECH">B.E. Mechanical Engineering</option>
+                        <option value="AI_DS">B.Tech. Artificial Intelligence and Data Science</option>
+                    </select>
+                    <small class="error-text" id="courseError"></small>
+                </div>
+
+                <!-- 5. Account Password Field -->
+                <div class="form-group">
+                    <label for="password">Account Password <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Must be 8+ chars with uppercase, number & symbol">
+                    <small class="error-text" id="passwordError"></small>
+                    <small class="hint-text">Requirement: At least 8 characters, 1 uppercase, 1 lowercase, 1 digit, and 1 special char (@$!%*?&).</small>
+                </div>
+
+                <!-- 6. File Upload Field -->
+                <div class="form-group">
+                    <label for="studentFile">Upload Profile Document / Photo <span class="required">*</span></label>
+                    <input type="file" id="studentFile" name="studentFile" accept=".pdf,.jpg,.jpeg,.png">
+                    <small class="error-text" id="fileError"></small>
+                    <small class="hint-text">Allowed formats: PDF, JPG, PNG (Max size: 2MB).</small>
+                </div>
+
+                <!-- Form Action Buttons -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Register Student</button>
+                    <button type="reset" class="btn btn-secondary" id="resetBtn">Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2026 KPR Institute of Engineering and Technology | Department of CSE</p>
+    </footer>
+
+    <!-- Linking External Vanilla JavaScript for Client-Side Validation -->
+    <script src="js/validation.js"></script>
+</body>
+</html>

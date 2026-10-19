@@ -1,0 +1,276 @@
+/* 
+ * KPR Institute of Engineering and Technology
+ * Department of CSE - Web Technology (U21CS501)
+ * CSS Stylesheet for Question 3: Servlet + JSP Portal
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #2c3e50;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Navbar */
+.navbar {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-brand span {
+    color: #ecc94b;
+}
+
+.user-badge {
+    font-size: 0.9rem;
+    background-color: #2b6cb0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.btn-logout {
+    background-color: #e53e3e;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+.btn-logout:hover {
+    background-color: #c53030;
+}
+
+/* Container Layout */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+/* Cards & Grid */
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 25px;
+}
+
+.login-card {
+    max-width: 420px;
+    margin: 60px auto;
+}
+
+.card-title {
+    color: #1a365d;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #2b6cb0;
+    box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #1a365d;
+    color: #ffffff;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #2a4365;
+}
+
+/* Alerts */
+.alert {
+    padding: 12px 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.alert-danger {
+    background-color: #fed7d7;
+    color: #9b2c2c;
+    border: 1px solid #feb2b2;
+}
+
+.alert-success {
+    background-color: #c6f6d5;
+    color: #22543d;
+    border: 1px solid #9ae6b4;
+}
+
+/* Student Profile Layout */
+.student-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.student-card {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.student-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #edf2f7;
+    border: 2px solid #2b6cb0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.student-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.student-details {
+    flex: 1;
+}
+
+.student-details h3 {
+    color: #1a365d;
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+
+.roll-tag {
+    display: inline-block;
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.detail-row {
+    margin-bottom: 6px;
+    font-size: 0.92rem;
+}
+
+.detail-row strong {
+    color: #4a5568;
+}
+
+/* Document Links */
+.doc-section {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px dashed #e2e8f0;
+}
+
+.doc-section h4 {
+    font-size: 0.9rem;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.doc-link-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.doc-link {
+    background-color: #edf2f7;
+    color: #2b6cb0;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #cbd5e0;
+}
+
+.doc-link:hover {
+    background-color: #e2e8f0;
+    color: #1a365d;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a365d;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 16px;
+    font-size: 0.85rem;
+    margin-top: auto;
+}

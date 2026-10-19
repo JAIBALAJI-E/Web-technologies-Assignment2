@@ -1,0 +1,218 @@
+/* 
+ * KPR Institute of Engineering and Technology
+ * Department of CSE - Web Technology (U21CS501)
+ * CSS Stylesheet for Question 1: Student Registration Form
+ */
+
+/* CSS Reset & Basic Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333333;
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+/* Header Styling */
+.header {
+    background-color: #0d3b66;
+    color: #ffffff;
+    padding: 24px 20px;
+    text-align: center;
+    border-bottom: 4px solid #f4d35e;
+}
+
+.header-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.header-container p {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    margin-bottom: 6px;
+}
+
+.header-container h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #f4d35e;
+}
+
+/* Main Container & Card Layout */
+.main-container {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    border: 1px solid #e1e8ed;
+}
+
+.card-header {
+    border-bottom: 2px solid #eef2f5;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.card-header h3 {
+    color: #0d3b66;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.card-header p {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+/* Form Controls & Groups */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #2b2d42;
+    margin-bottom: 6px;
+}
+
+.required {
+    color: #d90429;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border: 1.5px solid #cccccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #0d3b66;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(13, 59, 102, 0.15);
+}
+
+/* Validation Styling */
+.form-group.error input,
+.form-group.error select {
+    border-color: #d90429;
+    background-color: #fff5f5;
+}
+
+.form-group.success input,
+.form-group.success select {
+    border-color: #38b000;
+}
+
+.error-text {
+    color: #d90429;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: none;
+    font-weight: 500;
+}
+
+.form-group.error .error-text {
+    display: block;
+}
+
+.hint-text {
+    color: #6c757d;
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+/* Global Alert Styling */
+.alert {
+    padding: 12px 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Buttons & Actions */
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #0d3b66;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #092846;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 15px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+}
